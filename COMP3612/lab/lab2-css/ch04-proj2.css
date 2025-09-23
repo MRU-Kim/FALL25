@@ -5,21 +5,121 @@
 body, section, header, div, p, h1, h2, h3, ul, li {
    margin: 0;
    padding: 0;
+   list-style-type: none; /*4*/
+}
+header {
+   margin-left: 20px;
 }
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
    background-color: #e4e7eb;
    font-weight: 300;
+   padding: 40px; /*3*/
 }
-header {
-   margin-left: 20px;
+section {
+   box-shadow: 20px rgba(0,0,0,0.1); 
+   width: 910px; /*3*/
+   text-align: 8px;
+   display: inline-block; 
+}
+
+li {
+   padding: 20px;
+}
+span {
+   font-weight: bold;
+}
+.price.free{
+   font-size: 24px;
+   font-weight: bold;
+   background-color: #5BB189;
+   padding: 20px;
+}
+.price.free span{
+   font-weight: normal;
+   font-size: 15px;
+}
+.price.standard{
+   font-size: 24px;
+   font-weight: bold;
+   background-color: #4B0082;
+   padding: 20px;
+}
+.price.standard span{
+   font-weight: normal;
+   font-size: 15px;
+}
+.price.professional{
+   font-size: 24px;
+   font-weight: bold;
+   background-color: #EC632A;
+   padding: 20px;
+}
+.price.professional span{
+   font-weight: normal;
+   font-size: 15px;
+}
+.column ul li:nth-child(2n) { /*5*/
+   background-color: rgba(47,59,64,0.35);
+}
+.column {
+   background-color: #2F4F4F;
+   display: inline-block; /*4*/
+   width: 300px;
+   font-size: 18px;
+   color: white;
+   text-align: center;
+}
+section .column:nth-child(2n) { /*5*/
+   background-color: white;
+   color: black;
+}
+section .column a {
+   display: inline-block; /*4*/
+   background-color: #3A6BA5;
+   color: white;
+   padding: 12px;
+   width: 275px;
+   border-radius: 5px;
+   box-shadow: 20px rgba(0,0,0,0.1); 
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+section .column a:hover { /*6*/
+   background-color: #437CBF;
+}
+div .confidence {
+   background-color: #2F4F4F;
 }
 h1 { 
    text-align: center;
    font-weight: 600;
    font-size: 42px;
    padding: 10px 0;
+}
+h2 {
+   font-size: 25px;
+}
+h3 {
+   padding: 20px;
+}
+#confidence {
+   display: inline-block;
+   background-color: #2F4F4F;
+   margin-top: 30px;
+   width: 910px;
+   color: white;
+   padding: 30px;
+}
+#condidence ul {
+   padding-left: 0;
+}
+#confidence ul li {
+   padding: 10px;
+   background: url("checkmark.svg") no-repeat left center;
+   background-size: 24px; /**/
+   padding-left: 40px;
 }
 
 /* add styles here */
