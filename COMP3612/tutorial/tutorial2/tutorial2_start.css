@@ -1,0 +1,56 @@
+h2, span{
+    /*all h2 and span*/
+}
+
+h2 {
+    /* all h2*/
+    margin: 0; /*9.*/
+}
+
+.box {
+    /* All .box*/
+    border: 1pt solid black; /*10.*/
+}
+
+body {
+    font-size: 14px; /*11.*/
+}
+
+.large {
+    font-size: 1.2rem; /*11.*/
+}
+
+#second p {
+    /* All p elements within an element with ID of 'second'*/
+}
+
+#first .box {
+    /*All elements with CLASS 'box' within an element with ID of first'*/
+}
+
+span .box {
+    /*All span elements with CLASS 'box'*/ 
+
+}
+
+#first .box {
+    /*All elements with class 'box' within a div element with ID of 'first'*/
+    /*Can also do div#fist .box{}*/
+}
+
+.box [title]{
+    /*All elements with a 'title' attribute within an element with class 'box'*/
+}
+
+div.box p:first-child{
+    /*The first p element within a div with class 'box'*/
+}
+
+.box>div {
+    /*All div elements that are direct child of an element with class 'box'*/
+
+}
+
+
+
+
