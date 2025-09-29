@@ -81,3 +81,10 @@ body {
     border-radius: 5px;
     text-decoration: none; /*???*/
 }
+
+.featured-products {
+    position: relative;
+    font-family: Arial, sans-serif;
+    bottom: 100px;
+    text-align: center;
+}
