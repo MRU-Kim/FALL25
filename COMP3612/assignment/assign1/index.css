@@ -182,10 +182,6 @@ body {
     padding-bottom: 50px;
 }
 
-.aboutus-ourstory p{
-
-}
-
 .aboutus-ourstory img{
     display: block;
     margin: 0 auto;
@@ -194,6 +190,78 @@ body {
     background-color:black;
 }
 
+.aboutus-ourvalues{
+    background-color:rgb(249, 249, 250);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutus-ourvalues h1{
+    text-align: center;
+}
+
+.aboutus-ourvalues table{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto; 
+    border-spacing: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    table-layout: fixed;
+}
+
+.aboutus-ourvalues .info-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;        
+    background-color: #007BFF; 
+    color: white;              
+    display: inline-flex;             
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+.aboutus-ourvalues td{
+    font-family: Arial, sans-serif;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 30px;
+    background-color: white;
+}
+
+.aboutus-meetourteam{
+    text-align: center;
+}
+
+.aboutus-meetourteam .img-circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;        
+    background-color: #007BFF; 
+    color: white;              
+    display: inline-flex;             
+    align-items: center;
+    vertical-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+}
+
+.aboutus-meetourteam table{
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto; 
+    border-spacing: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    table-layout: fixed;
+}
 
 .global-footer{
     font-family: Arial, sans-serif;
