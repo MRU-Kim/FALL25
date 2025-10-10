@@ -176,10 +176,15 @@ body {
 }
 .aboutus-ourstory table{
     font-family: Arial, sans-serif;
+    width: 100%;
+    object-fit: cover; /*???*/
+    object-position: top; /*???*/
+    font-family: Arial, sans-serif;
     text-align: justify;
-    padding-left: 250px;
-    padding-right: 250px;
+    max-width: 200px;
     padding-bottom: 50px;
+    margin-inline: 30px;
+    margin: 0 auto;
 }
 
 .aboutus-ourstory img{
@@ -200,14 +205,21 @@ body {
     text-align: center;
 }
 
+.aboutus-ourvalues p{
+    font-size: 16px;
+    padding-left: 70px;
+    padding-right: 70px;
+    color: rgb(137, 146, 161);
+}
+
 .aboutus-ourvalues table{
-    width: 100%;
+    width: 90%;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0 auto; 
-    border-spacing: 25px;
-    padding-left: 150px;
-    padding-right: 150px;
+    border-spacing: 60px;
+    padding-left: 50px;
+    padding-right: 50px;
     table-layout: fixed;
 }
 
@@ -229,40 +241,63 @@ body {
 .aboutus-ourvalues td{
     font-family: Arial, sans-serif;
     border: 1px solid rgb(223, 223, 223);
-    padding: 30px;
+    padding: 20px;
     background-color: white;
+    vertical-align: top;
 }
 
 .aboutus-meetourteam{
     text-align: center;
 }
 
+.aboutus-meetourteam .meetourteamd-description{
+    margin: 0 auto; 
+}
+
 .aboutus-meetourteam .img-circle{
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;        
     background-color: #007BFF; 
     color: white;              
-    display: inline-flex;             
+    display: inline-flexbox;             
     align-items: center;
     vertical-align: center;
     justify-content: center;
     font-weight: bold;
     font-size: 20px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2); 
+    padding: 40px;
+    position: relative;
 }
 
 .aboutus-meetourteam table{
-    width: 100%;
+    width: 70%;
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0 auto; 
-    border-spacing: 25px;
+    border-spacing: 20px;
     padding-left: 150px;
     padding-right: 150px;
     table-layout: fixed;
 }
 
+.aboutus-meetourteam h3{
+    color: rgb(137, 146, 161);
+    font-size: 15px;
+}
+
+.aboutus-meetourteam p{
+    font-size: 16px;
+}
+
+.aboutus-meetourteam td{
+    vertical-align: top;
+}
+
+.aboutus-meetourteam th{
+    padding: 100;
+}
 .global-footer{
     font-family: Arial, sans-serif;
     background-color: #273f53;
