@@ -207,8 +207,6 @@ body {
 
 .aboutus-ourvalues p{
     font-size: 16px;
-    padding-left: 70px;
-    padding-right: 70px;
     color: rgb(137, 146, 161);
 }
 
@@ -259,8 +257,7 @@ body {
     height: 140px;
     border-radius: 50%;        
     background-color: #007BFF; 
-    color: white;              
-    display: inline-flexbox;             
+    color: white;                          
     align-items: center;
     vertical-align: center;
     justify-content: center;
@@ -298,6 +295,32 @@ body {
 .aboutus-meetourteam th{
     padding: 100;
 }
+
+.aboutus-ourjourney{
+    background-color:rgb(249, 249, 250);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.aboutus-ourjourney-title{
+    text-align: center;
+}
+
+.aboutus-ourjourney table{
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.aboutus-ourjourney h1{
+    font-size: 20px;
+}
+
+.aboutus-ourjourney .bulleti{
+    color: #007BFF;
+    font-size: 60px;
+    vertical-align: top;
+}
+
 .global-footer{
     font-family: Arial, sans-serif;
     background-color: #273f53;
