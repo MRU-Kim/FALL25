@@ -13,7 +13,7 @@
                 <th class="navigation-bar">
                     <nav> 
                         <ul>
-                            <li><a href="idex.html">Home</a></li> 
+                            <li><a href="index.html">Home</a></li> 
                             <li><a href="#Shop">Shop</a></li>
                             <li><a href="about.html">About</a></li> 
                             <li><a href="#Contact">Contact</a></li>
@@ -30,100 +30,168 @@
     <main id="product-page">
 
         <section class="product-layout">
+            <!--https://www.w3schools.com/tags/tag_label.asp-->
+            <!-- Left: gallery -->
+            <section class="product-gallery" aria-label="Gallery">
+                <figure class="product-hero">
+                    <img src="data/images/003-medium-front.png" alt="sweater-big" />
+                </figure>
 
-        <!-- Left: gallery -->
-        <section class="product-gallery" aria-label="Gallery">
-            <figure class="product-hero">
-                <img src="data/images/003-medium-front.png" alt="sweater-big" />
-            </figure>
+                <ul class="product-thumbs">
+                    <li>
+                        <button type="button" aria-label="Show front view">
+                        <img src="data/images/003-thumb-front.png" alt="sweater-tumbnail-front" />
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-label="Show back view">
+                        <img src="data/images/003-thumb-back.png" alt="sweater-thumbnail-back" />
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" aria-label="Show detail view">
+                        <img src="data/images/003-thumb-back-angle.png" alt="sweater-thumbnail-angle" />
+                        </button>
+                    </li>
+                </ul>
+            </section>
 
-            <ul class="product-thumbs">
-                <li>
-                    <button type="button" aria-label="Show front view">
-                    <img src="data/images/003-thumb-front.png" alt="sweater-tumbnail-front" />
-                    </button>
-                </li>
-                <li>
-                    <button type="button" aria-label="Show back view">
-                    <img src="data/images/003-thumb-back.png" alt="sweater-thumbnail-back" />
-                    </button>
-                </li>
-                <li>
-                    <button type="button" aria-label="Show detail view">
-                    <img src="data/images/003-thumb-back-angle.png" alt="sweater-thumbnail-angle" />
-                    </button>
-                </li>
-            </ul>
+            <!-- Right: info + purchase -->
+            <section class="product-info" alt="Purchase options">
+                <h1 class="product-title">Merino Wool Cable Knit Sweater</h1>
+                <div class="product-rating">
+                    <p class="stars">★★★★★ (4.8/5) - 127 reviews</p> <!--https://emojicombos.com/star-->
+                </div>
+        
+                <p class="product-price">$199.99</p>
+                <div class="product-description">
+                    <p>This luxurious cable knit sweater is made from 100% merino wool for </p>
+                    <p> exceptional warmth and softness.The classic cable pattern adds timeless </p>
+                    <p>texture and visual interest to this versatile piece. Natural temperature </p>
+                    <p>regulation properties make it perfect for transitional seasons.</p>
+                </div>
+                <form method="post" action="https://www.randyconnolly.com/tests/process.php">
+
+                    <div class="product-size">
+                        <div class="size-label">Size:</div>
+
+                        <div class="size-options">
+                            <input type="radio" id="size-xs" name="size" value="XS" checked>
+                            <label for="size-xs">XS</label>
+
+                            <input type="radio" id="size-s" name="size" value="S">
+                            <label for="size-s">S</label>
+
+                            <input type="radio" id="size-m" name="size" value="M">
+                            <label for="size-m">M</label>
+
+                            <input type="radio" id="size-l" name="size" value="L">
+                            <label for="size-l">L</label>
+
+                            <input type="radio" id="size-xl" name="size" value="XL">
+                            <label for="size-xl">XL</label>
+
+                            <input type="radio" id="size-xxl" name="size" value="XXL">
+                            <label for="size-xxl">XXL</label>
+                        </div>
+                    </div>
+
+                    <!-- Color -->
+                    <div class="color-options">
+                        <input type="radio" id="color-ivory" name="color" value="ivory">
+                        <label for="color-ivory" class="color-ivory" title="Ivory"></label>
+
+                        <input type="radio" id="color-grey" name="color" value="grey">
+                        <label for="color-grey" class="color-grey" title="Grey"></label>
+
+                        <input type="radio" id="color-navy" name="color" value="navy">
+                        <label for="color-navy" class="color-navy" title="Navy"></label>
+
+                        <input type="radio" id="color-rust" name="color" value="rust">
+                        <label for="color-rust" class="color-rust" title="Rust"></label>
+                    </div>
+
+                    <!-- Quantity -->
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1" />
+
+                    <!-- Submit button -->
+                    <div class="submitandwish">
+                        <button type="submit" class="btn-cart">Add to Cart</button>
+                        <button type="button" class="btn-wishlist">Add to Wishlist</button>
+                    </div>
+                </form>
+            </section>
         </section>
 
-        <!-- Right: info + purchase -->
-        <section class="product-info" alt="Purchase options">
-            <h1 class="product-title">Merino Wool Cable Knit Sweater</h1>
-            <div class="product-rating">
-                <p class="stars">★★★★★ (4.8/5) - 127 reviews</p>
-            </div>
-    
-            <p class="product-price">$199.99</p>
-            <div class="product-description">
-                <p>This luxurious cable knit sweater is made from 100% merino wool for </p>
-                <p> exceptional warmth and softness.The classic cable pattern adds timeless </p>
-                <p>texture and visual interest to this versatile piece. Natural temperature </p>
-                <p>regulation properties make it perfect for transitional seasons.</p>
-            </div>
-            <form method="post" action="https://www.randyconnolly.com/tests/process.php">
+        <hr class="randomline">
 
-                <div class="product-size">
-                    <div class="size-label">Size:</div>
+        <section class="description-and-reviews">
+            <nav class="description-spec-care">
+                <!--https://www.w3schools.com/tags/tag_label.asp-->
+                <input type="radio" id="tab-description" name="tab" checked>
+                <label for="tab-description">Description</label>
 
-                    <div class="size-options">
-                        <input type="radio" id="size-xs" name="size" value="XS" checked>
-                        <label for="size-xs">XS</label>
+                <input type="radio" id="tab-specification" name="tab">
+                <label for="tab-specification">Specification</label>
 
-                        <input type="radio" id="size-s" name="size" value="S">
-                        <label for="size-s">S</label>
-
-                        <input type="radio" id="size-m" name="size" value="M">
-                        <label for="size-m">M</label>
-
-                        <input type="radio" id="size-l" name="size" value="L">
-                        <label for="size-l">L</label>
-
-                        <input type="radio" id="size-xl" name="size" value="XL">
-                        <label for="size-xl">XL</label>
-
-                        <input type="radio" id="size-xxl" name="size" value="XXL">
-                        <label for="size-xxl">XXL</label>
-                    </div>
+                <input type="radio" id="tab-care" name="tab">
+                <label for="tab-care">Care Instruction</label>
+            </nav>
+            <section class="product-details">
+                <h1>Product Details</h1>
+                <p>This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+            </section>
+            <section class="key-features">
+                <h2>Key Features:</h2>
+                <table class="allfeatures">
+                    <tr>
+                        <td class="material">Material</td>
+                        <td>100% premium merino wool</td>
+                    </tr>
+                    <tr>
+                        <td class="style">Style</td>
+                        <td>Classic Cable knit pattern</td>
+                    </tr>
+                    <tr>
+                        <td class="closures">Closures</td>
+                        <td>Ribbed cuffs and hem</td>
+                    </tr>
+                    <tr>
+                        <td class="care">Care</td>
+                        <td>Dry clean recommended</td>
+                    </tr>
+                </table>
+            </section>
+            <!--https://emojicombos.com/star-->
+            <section class="review">
+                <div class="review-header">
+                    <h1 class="review-name">Maria C.</h1> 
+                    <p class="stars">★★★★★</p> 
+                    <p class="date-of-review">March 10, 2025</p>
                 </div>
+                <p class="full-review">Absolutely stunning sweater! The merino wool is incredibly soft and the cable knit detail is beautiful. Worth the investment</p>
 
-                <!-- Color -->
-                <div class="color-options">
-                    <input type="radio" id="color-ivory" name="color" value="ivory">
-                    <label for="color-ivory" class="color-ivory" title="Ivory"></label>
+                <hr class="randomline">
 
-                    <input type="radio" id="color-grey" name="color" value="grey">
-                    <label for="color-grey" class="color-grey" title="Grey"></label>
-
-                    <input type="radio" id="color-navy" name="color" value="navy">
-                    <label for="color-navy" class="color-navy" title="Navy"></label>
-
-                    <input type="radio" id="color-rust" name="color" value="rust">
-                    <label for="color-rust" class="color-rust" title="Rust"></label>
+                <div class="review-header">
+                    <h1 class="review-name">Robert H.</h1> 
+                    <p class="stars">★★★★☆</p> 
+                    <p class="date-of-review">March 5, 2025</p>
                 </div>
+                <p class="full-review">Bought this for our lead software engineer and she lovew it. High quality construction and the wool feels luxurious. Fits true to size</p>
 
-                <!-- Quantity -->
-                <label for="quantity">Quantity:</label>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" />
+                <hr class="randomline">
 
-                <!-- Submit button -->
-                <div class="submitandwish">
-                    <button type="submit" class="btn-cart">Add to Cart</button>
-                    <button type="button" class="btn-wishlist">Add to Wishlist</button>
+                <div class="review-header">
+                    <h1 class="review-name">Nina F.</h1> 
+                    <p class="stars">★★★☆☆</p> 
+                    <p class="date-of-review">February 28, 2025</p>
                 </div>
-            </form>
+                <p class="full-review">Beautiful sweater but requires dry cleaning which is inconvenient. The quality is excellent though and it's very warm.</p>
+            </section>
         </section>
     </main>
-
 
 
 
@@ -136,7 +204,7 @@
             </tr>
             <tr>
                 <td><a href="#ContactUs">Contact Us</a></td>
-                <td><a href="#AboutUs">About Us</a></td>
+                <td><a href="about.html">About Us</a></td>
                 <td><a href="#Newsletter">Newsletter</a></td>
             </tr>
             <tr>
