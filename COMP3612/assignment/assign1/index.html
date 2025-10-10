@@ -13,7 +13,7 @@
                 <th class="navigation-bar">
                     <nav> 
                         <ul>
-                            <li><a href="idex.html">Home</a></li> 
+                            <li class="selectedhome"><a href="idex.html">Home</a></li> 
                             <li><a href="#Shop">Shop</a></li>
                             <li><a href="about.html">About</a></li> 
                             <li><a href="#Contact">Contact</a></li>
@@ -24,63 +24,64 @@
             </tr>
         </table>
     </header>
-
-    <section class="home-header">
-        <span class="whole-home-header">
-            <img src="data/images/closet.jpg" alt="home-banner">
-            <h1 class="top-title">Fashion for Computer Scientists</h1>
-            <p class="mid-title">Discover our collection of comfortable, stylish clothes for every programming occasion.</p>
-            <a href="#Shop" class="shop-button">Shop Now</a>
-        </span>
-    </section>
     
-    <div class="home-featured-products"><h2>Featured Products</h2></div>
+    <main id="index-page">
+        <section class="home-header">
+            <span class="whole-home-header">
+                <img src="data/images/closet.jpg" alt="home-banner">
+                <h1 class="top-title">Fashion for Computer Scientists</h1>
+                <p class="mid-title">Discover our collection of comfortable, stylish clothes for every programming occasion.</p>
+                <a href="#Shop" class="shop-button">Shop Now</a>
+            </span>
+        </section>
+        
+        <div class="home-featured-products"><h2>Featured Products</h2></div>
 
-    <section class="home-displayed-products">
-        <span>
+        <section class="home-displayed-products">
+            <span>
+                <table>
+                    <tr>
+                        <th>
+                            <img src="data/images/003-small-front.png" alt="home-sweater-display">
+                            <p class="home-thumbnail-product-name">Cable Knit Sweater</p>
+                            <p class="home-thumbnail-product-price">$119.99</p>
+                            <a href="#Viewdetails" class="view-details-button">View Details</a>
+                        </th>
+                        <th>
+                            <img src="data/images/008-small-front.png" alt="home-boots-display">
+                            <p class="home-thumbnail-product-name">Chelsea Leather Boots</p>
+                            <p class="home-thumbnail-product-price">$189.99</p>
+                            <a href="#Viewdetails" class="view-details-button">View Details</a>
+                        </th>
+                        <th>
+                            <img src="data/images/011-small-front.png" alt="home-shirt-display">
+                            <p class="home-thumbnail-product-name">Vintage Flannel Shirt</p>
+                            <p class="home-thumbnail-product-price">$52.99</p>
+                            <a href="#Viewdetails" class="view-details-button">View Details</a>
+                        </th>
+                        <th>
+                            <img src="data/images/009-small-front.png" alt="home-cardigan-display">
+                            <p class="home-thumbnail-product-name">Cardigan Sweater</p>
+                            <p class="home-thumbnail-product-price">$69.99</p>
+                            <a href="#Viewdetails" class="view-details-button">View Details</a>
+                        </th>
+                    </tr>
+                </table>
+            </span>
+        </section>
+
+        <section class="home-description">
             <table>
                 <tr>
-                    <th>
-                        <img src="data/images/003-small-front.png" alt="home-sweater-display">
-                        <p class="home-thumbnail-product-name">Cable Knit Sweater</p>
-                        <p class="home-thumbnail-product-price">$119.99</p>
-                        <a href="#Viewdetails" class="view-details-button">View Details</a>
-                    </th>
-                    <th>
-                        <img src="data/images/008-small-front.png" alt="home-boots-display">
-                        <p class="home-thumbnail-product-name">Chelsea Leather Boots</p>
-                        <p class="home-thumbnail-product-price">$189.99</p>
-                        <a href="#Viewdetails" class="view-details-button">View Details</a>
-                    </th>
-                    <th>
-                        <img src="data/images/011-small-front.png" alt="home-shirt-display">
-                        <p class="home-thumbnail-product-name">Vintage Flannel Shirt</p>
-                        <p class="home-thumbnail-product-price">$52.99</p>
-                        <a href="#Viewdetails" class="view-details-button">View Details</a>
-                    </th>
-                    <th>
-                        <img src="data/images/009-small-front.png" alt="home-cardigan-display">
-                        <p class="home-thumbnail-product-name">Cardigan Sweater</p>
-                        <p class="home-thumbnail-product-price">$69.99</p>
-                        <a href="#Viewdetails" class="view-details-button">View Details</a>
-                    </th>
+                    <td>
+                        <h1>Why Choose COMP 3612 for your fashion needs?</h1>
+                        <p>We believe that programmers need more than black hoodies. You'll be a more confident, comfortable, and efficient developer wearing our clothes. Our carefully curated collection features premium fabrics, expert craftsmanship, and timeless designs.</p> 
+                        <p>From scrum sessions to 4am debugging, we have the perfect clothes for every moment in your coding journey. Quality you can feel, style you can trust.</p>
+                    </td>
                 </tr>
             </table>
-        </span>
-    </section>
-
-    <section class="home-description">
-        <table>
-            <tr>
-                <td>
-                    <h1>Why Choose COMP 3612 for your fashion needs?</h1>
-                    <p>We believe that programmers need more than black hoodies. You'll be a more confident, comfortable, and efficient developer wearing our clothes. Our carefully curated collection features premium fabrics, expert craftsmanship, and timeless designs.</p> 
-                    <p>From scrum sessions to 4am debugging, we have the perfect clothes for every moment in your coding journey. Quality you can feel, style you can trust.</p>
-                </td>
-            </tr>
-        </table>
-    </section>
-
+        </section>
+    </main>
     <footer class="global-footer">
         <table>
             <tr>

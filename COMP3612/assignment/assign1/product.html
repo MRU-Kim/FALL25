@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="ETF-8">
+    <title>COMP3612 Assign 1 - Product Page</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header class ="global-header">
+        <table>
+            <tr>
+                <th><h1>COMP 3612 Assign 1</h1></th>
+                <th class="navigation-bar">
+                    <nav> 
+                        <ul>
+                            <li><a href="idex.html">Home</a></li> 
+                            <li><a href="#Shop">Shop</a></li>
+                            <li><a href="about.html">About</a></li> 
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="#Cart">Cart (0)</a></li>
+                        </ul>
+                    </nav>
+                </th>
+            </tr>
+        </table>
+    </header>
+
+    <nav class="quicknav"><a href="index.html">Home</a> > <a href="#Sweaters">Sweaters</a> > Merino Wool Cable Knit Sweater</Merino></nav>
+
+    <main id="product-page">
+
+        <section class="product-layout">
+
+        <!-- Left: gallery -->
+        <section class="product-gallery" aria-label="Gallery">
+            <figure class="product-hero">
+                <img src="data/images/003-medium-front.png" alt="sweater-big" />
+            </figure>
+
+            <ul class="product-thumbs">
+                <li>
+                    <button type="button" aria-label="Show front view">
+                    <img src="data/images/003-thumb-front.png" alt="sweater-tumbnail-front" />
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Show back view">
+                    <img src="data/images/003-thumb-back.png" alt="sweater-thumbnail-back" />
+                    </button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Show detail view">
+                    <img src="data/images/003-thumb-back-angle.png" alt="sweater-thumbnail-angle" />
+                    </button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Right: info + purchase -->
+        <section class="product-info" alt="Purchase options">
+            <h1 class="product-title">Merino Wool Cable Knit Sweater</h1>
+            <div class="product-rating">
+                <p class="stars">★★★★★ (4.8/5) - 127 reviews</p>
+            </div>
+    
+            <p class="product-price">$199.99</p>
+            <div class="product-description">
+                <p>This luxurious cable knit sweater is made from 100% merino wool for </p>
+                <p> exceptional warmth and softness.The classic cable pattern adds timeless </p>
+                <p>texture and visual interest to this versatile piece. Natural temperature </p>
+                <p>regulation properties make it perfect for transitional seasons.</p>
+            </div>
+            <form method="post" action="https://www.randyconnolly.com/tests/process.php">
+
+                <div class="product-size">
+                    <div class="size-label">Size:</div>
+
+                    <div class="size-options">
+                        <input type="radio" id="size-xs" name="size" value="XS" checked>
+                        <label for="size-xs">XS</label>
+
+                        <input type="radio" id="size-s" name="size" value="S">
+                        <label for="size-s">S</label>
+
+                        <input type="radio" id="size-m" name="size" value="M">
+                        <label for="size-m">M</label>
+
+                        <input type="radio" id="size-l" name="size" value="L">
+                        <label for="size-l">L</label>
+
+                        <input type="radio" id="size-xl" name="size" value="XL">
+                        <label for="size-xl">XL</label>
+
+                        <input type="radio" id="size-xxl" name="size" value="XXL">
+                        <label for="size-xxl">XXL</label>
+                    </div>
+                </div>
+
+                <!-- Color -->
+                <div class="color-options">
+                    <input type="radio" id="color-ivory" name="color" value="ivory">
+                    <label for="color-ivory" class="color-ivory" title="Ivory"></label>
+
+                    <input type="radio" id="color-grey" name="color" value="grey">
+                    <label for="color-grey" class="color-grey" title="Grey"></label>
+
+                    <input type="radio" id="color-navy" name="color" value="navy">
+                    <label for="color-navy" class="color-navy" title="Navy"></label>
+
+                    <input type="radio" id="color-rust" name="color" value="rust">
+                    <label for="color-rust" class="color-rust" title="Rust"></label>
+                </div>
+
+                <!-- Quantity -->
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1" />
+
+                <!-- Submit button -->
+                <div class="submitandwish">
+                    <button type="submit" class="btn-cart">Add to Cart</button>
+                    <button type="button" class="btn-wishlist">Add to Wishlist</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+
+
+    <footer class="global-footer">
+        <table>
+            <tr>
+                <th>Customer Service</th>
+                <th>Company</th>
+                <th>Connect</th>
+            </tr>
+            <tr>
+                <td><a href="#ContactUs">Contact Us</a></td>
+                <td><a href="#AboutUs">About Us</a></td>
+                <td><a href="#Newsletter">Newsletter</a></td>
+            </tr>
+            <tr>
+                <td><a href="#SizeGuide">Size Guide</a></td>
+                <td><a href="#Careers">Careers</a></td>
+                <td><a href="#Facebook">Facebook</a></td>
+            </tr>
+            <tr>
+                <td><a href="#Returns">Returns</a></td>
+                <td><a href="#Press">Press</a></td>
+                <td><a href="#Instagram">Instagram</a></td>
+            </tr>
+            <tr>
+                <td><a href="#ShippingInfo">Shipping Info</a></td>
+                <td><a href="#PrivacyPolicy">Privacy Policy</a></td>
+                <td><a href="#Twitter">Twitter</a></td>
+            </tr>
+        </table>
+        <hr>
+        <p>© 2025 COMP3612. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
